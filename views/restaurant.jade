@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1= title.replace(/_/g, ' ')
+  ul
+    li 
+      span(class="name") Name
+      span(class="party") Party
+      span(class="time") Time
+    if restaurant.length !== 0
+      - for(var guest in restaurant) {
+        li
+          span(class="name")= restaurant[guest].name
+          span(class="party")= restaurant[guest].party
+          span(class="time")= restaurant[guest].time
+      - };
+    else
+      li List is Empty
+  
+  Button(type="button", onClick="window.location.href='/"+encodeURIComponent(title)+"/new'") Add
+  
+  form(method = "POST", action = "/"+encodeURIComponent(title))
+    input(name="_method", type="hidden", value="DELETE")
+    input(type="submit", value="DeQue")

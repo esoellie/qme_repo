@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title.replace(/_/g, ' ')
+  form(method = "POST", action = "/"+encodeURIComponent(title))
+    label(for="name") Name:
+    input(name="name", size=4)
+    label(for="party") Party:
+    input(name="party", size=4)
+    input(type="SUBMIT", value="Add")

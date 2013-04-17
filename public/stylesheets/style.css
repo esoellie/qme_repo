@@ -1,0 +1,34 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+li {
+	list-style: none;
+}
+
+span.name {
+	display: inline-block;
+	width: 5em;
+	float: left;
+}
+
+span.party {
+	display: inline-block;
+	width: 5em;
+	margin-left: 2em;
+}
+
+span.time {
+	display: inline-block;
+	width: 5em;
+	margin-left: 2em;
+}
+
+#logo img {
+	width: 300px;
+}
