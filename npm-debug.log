@@ -1,0 +1,66 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'exprss' ]
+2 info using npm@1.2.18
+3 info using node@v0.10.4
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose read json F:\My Projects\Learning Node\helloworld\package.json
+6 warn package.json qme_app@0.0.1 No README.md file found!
+7 verbose read json F:\My Projects\Learning Node\helloworld\node_modules\express\package.json
+8 verbose read json F:\My Projects\Learning Node\helloworld\node_modules\jade\package.json
+9 verbose from cache F:\My Projects\Learning Node\helloworld\package.json
+10 verbose readDependencies using package.json deps
+11 verbose cache add [ 'exprss', null ]
+12 verbose cache add name=undefined spec="exprss" args=["exprss",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'exprss',
+13 verbose parsed url   path: 'exprss',
+13 verbose parsed url   href: 'exprss' }
+14 silly lockFile bd3d0578-exprss exprss
+15 verbose lock exprss C:\Users\shyny\AppData\Roaming\npm-cache\bd3d0578-exprss.lock
+16 silly lockFile bd3d0578-exprss exprss
+17 silly lockFile bd3d0578-exprss exprss
+18 verbose addNamed [ 'exprss', '' ]
+19 verbose addNamed [ null, '' ]
+20 silly lockFile 8dd99f71-exprss exprss@
+21 verbose lock exprss@ C:\Users\shyny\AppData\Roaming\npm-cache\8dd99f71-exprss.lock
+22 silly addNameRange { name: 'exprss', range: '', hasData: false }
+23 verbose url raw exprss
+24 verbose url resolving [ 'https://registry.npmjs.org/', './exprss' ]
+25 verbose url resolved https://registry.npmjs.org/exprss
+26 info trying registry request attempt 1 at 15:08:21
+27 http GET https://registry.npmjs.org/exprss
+28 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+29 info trying registry request attempt 2 at 15:08:52
+30 http GET https://registry.npmjs.org/exprss
+31 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+32 info trying registry request attempt 3 at 15:10:13
+33 http GET https://registry.npmjs.org/exprss
+34 silly lockFile 8dd99f71-exprss exprss@
+35 silly lockFile 8dd99f71-exprss exprss@
+36 error Error: connect ETIMEDOUT
+36 error     at errnoException (net.js:883:11)
+36 error     at Object.afterConnect [as oncomplete] (net.js:874:19)
+37 error If you need help, you may report this log at:
+37 error     <http://github.com/isaacs/npm/issues>
+37 error or email it to:
+37 error     <npm-@googlegroups.com>
+38 error System Windows_NT 6.1.7601
+39 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "exprss"
+40 error cwd F:\My Projects\Learning Node\helloworld
+41 error node -v v0.10.4
+42 error npm -v 1.2.18
+43 error syscall connect
+44 error code ETIMEDOUT
+45 error errno ETIMEDOUT
+46 verbose exit [ 1, true ]

@@ -1,14 +1,23 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color:#333333;
+  font-family: 'Poiret One', cursive;
+  text-align:center;
+  font-size:1.5em;
 }
 
 a {
   color: #00B7FF;
 }
 
+h1 {
+	font-size:4em;
+}
+
+
 li {
 	list-style: none;
+	font-size:2em;
 }
 
 span.name {
@@ -30,5 +39,5 @@ span.time {
 }
 
 #logo img {
-	width: 300px;
+	width: 500px;
 }

@@ -12,10 +12,10 @@ var app = express();
 var queue = require("./data/queue");
 
 // all environments
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 7777);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
-app.use(express.favicon());
+app.use(express.favicon(__dirname + '/public/images/favicon2.ico'));
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
@@ -28,7 +28,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', function(req, res){
-  res.render('index', { title: 'Choose a Restaurant', queue: queue });
+  res.render('index', { title: 'Pick a Restaurant', queue: queue });
 });
 //app.get('/users', user.list);
 app.get('/:restaurant/new', function (req,res) {
